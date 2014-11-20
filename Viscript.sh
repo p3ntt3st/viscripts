@@ -4,7 +4,7 @@ cat <<EOF
  Vi Script
 Update Metasploit
 *****************
-by Gie Cloudnine
+by Master Vi
 EOF
 echo && echo "Press Enter To Continue ${endc}"
   read input
