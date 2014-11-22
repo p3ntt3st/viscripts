@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 wifite
-author: derv82 at gmail
+author: master vi  at gmail
 author: Master vi
-author:  Vinbuntu
+author:  chyyk@hotmail.com
 Thanks to everyone that contributed to this project.
 If you helped in the past and want your name here, shoot me an email
 Licensed under the GNU General Public License Version 2 (GNU GPL v2),
