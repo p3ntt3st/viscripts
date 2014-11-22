@@ -8,20 +8,9 @@ echo ""
 echo ""
 echo "Flushing & updating resources"
 echo ""
-apt-get update
-apt-get upgrade
-apt-get autoremove
-echo ""
-echo ""
-echo ""
-echo "Removing old directory and creating new directory for Latest version of Metasploit"
-echo ""
-rm -rf /opt/metasploit/msf3
-mkdir -p /opt/metasploit/msf3
-echo ""
 echo "Downloading & Installing Latest Version of Metasploit from GitHub"
 echo "(It will take few minutes depending on your network speed)"
-git clone git://github.com/rapid7/metasploit-framework.git /opt/metasploit/msf3
+git clone git://github.com/rapid7/metasploit-framework.git /opt
 echo ""
 echo "Downloading & Installation Finished... Installing Additional required Packages"
 echo ""
@@ -63,13 +52,7 @@ echo "Ruby installed"
 echo ""
 echo ""
 echo "Downloading & Installing ruby-dev, libqp-dev, build-essential & rbenv"
-apt-get install ruby-dev libpq-dev build-essential
-git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-exec $SHELL -l
-rbenv install 1.9.3-p327
-rbenv rehash
+apt-get install build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev openjdk-7-jre subversion git-core autoconf postgresql pgadmin3 curl zlib1g-dev libxml2-dev libxslt1-dev vncviewer libyaml-dev ruby1.9.3 ruby-dev
 echo ""
 echo "Ruby Installation Finished"
 echo ""
@@ -80,22 +63,8 @@ echo ""
 echo "bundle install begins"
 bundle install
 cd
-echo ""
-echo ""
-echo "Uninstalling Previous Metasploit"
-echo ""
-echo "ATTENTION : Follow Steps to Uninstall"
-/opt/framework3/uninstall
-echo ""
-echo "Uninstalled"
-echo ""
-echo "setting new alias"
-alias msfupdate="/opt/metasploit/msf3/msfupdate"
-alias msfconsole="/opt/metasploit/msf3/msfconsole -L -y /opt/metasploit/msf3/config/database.yml -e development"
-echo ""
-echo ""
 echo "Metasploit Framework is now up-to-date"
-echo "To run metasploit use 'msfconsole' and For furthur updates use 'msfupdate'"
+echo "To run metasploit use './msfconsole' and For furthur updates use './msfupdate'"
 echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 echo "---------------------------------------"
 echo "by : Master Vi | chyyk@hotmail.com"
