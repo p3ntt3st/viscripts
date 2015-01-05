@@ -10,8 +10,8 @@ echo && echo "Press Enter To Continue ${endc}"
   read input
     cd /usr/share/exploitdb
     rm -rf archive.tar.bz2
-    wget http://www.exploit-db.com/exploit-database-master.zip
-    unzip  exploit-database-master.zip
+    wget https://github.com/offensive-security/exploit-database/archive/master.zip
+    unzip master.zip
     rm -rf exploit-database-master.zip
     echo -e "Done"
     sleep 3
