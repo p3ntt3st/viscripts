@@ -10,8 +10,8 @@ echo && echo "Press Enter To Continue ${endc}"
   read input
     cd /usr/share/exploitdb
     rm -rf archive.tar.bz2
-    wget http://www.exploit-db.com/archive.tar.bz2
-    tar xvfj archive.tar.bz2
-    rm -rf archive.tar.bz2
+    wget http://www.exploit-db.com/archive.zip
+    unzip  archive.zip
+    rm -rf archive.zip
     echo -e "Done"
     sleep 3
