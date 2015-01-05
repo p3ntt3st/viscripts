@@ -11,7 +11,7 @@ echo && echo "Press Enter To Continue ${endc}"
     cd /usr/share/exploitdb
     rm -rf archive.tar.bz2
     wget http://www.exploit-db.com/exploit-database-master.zip
-    unzip  archive.zip
+    unzip  exploit-database-master.zip
     rm -rf exploit-database-master.zip
     echo -e "Done"
     sleep 3
