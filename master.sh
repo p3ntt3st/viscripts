@@ -17,13 +17,20 @@ echo ""
 apt-get clean && apt-get autoclean 
 echo""
 echo "Add Kali linux official repositories "
-add-apt-repository "deb http://http.kali.org/kali kali main non-free" 
+apt-file update 
 echo""
-add-apt-repository "deb http://security.kali.org/kali-security kali/updates main  non-free"
+apt-get install software-properties-common
 echo""
-add-apt-repository  "deb-src http://http.kali.org/kali kali main non-free "
+apt-get install python-software-properties
 echo""
-add-apt-repository  "deb-src http://security.kali.org/kali-security kali/updates main  non-free"
+echo "deb http://http.kali.org/kali kali main non-free " | sudo tee -a /etc/apt/sources.list
+echo""
+echo "deb http://security.kali.org/kali-security kali/updates main  non-free" | sudo tee -a /etc/apt/sources.list
+echo""
+echo "deb-src http://kali.org/kali-security kali/updates main  non-free" | sudo tee -a /etc/apt/sources.list
+echo""
+echo "deb-src http://security.kali.org/kali-security kali/updates main  non-free" | sudo tee -a /etc/apt/sources.list
+echo""
 echo ""
 apt-get update 
 echo ""
