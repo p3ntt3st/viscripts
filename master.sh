@@ -27,9 +27,9 @@ echo "deb http://http.kali.org/kali kali main non-free " | sudo tee -a /etc/apt/
 echo""
 echo "deb http://security.kali.org/kali-security kali/updates main  non-free" | sudo tee -a /etc/apt/sources.list
 echo""
-echo "deb-src http://kali.org/kali-security kali/updates main  non-free" | sudo tee -a /etc/apt/sources.list
+echo "#deb-src http://kali.org/kali-security kali/updates main  non-free" | sudo tee -a /etc/apt/sources.list
 echo""
-echo "deb-src http://security.kali.org/kali-security kali/updates main  non-free" | sudo tee -a /etc/apt/sources.list
+echo "#deb-src http://security.kali.org/kali-security kali/updates main  non-free" | sudo tee -a /etc/apt/sources.list
 echo""
 echo ""
 apt-get update 
