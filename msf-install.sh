@@ -26,6 +26,8 @@ echo ""
 echo "Downloading & Installing Bundler"
 apt-get install bundler
 echo ""
+cd /opt/metasploit-framework
+echo ""
 echo "bundle install begins"
 bundle install 
 echo "Metasploit Framework is now up-to-date"
