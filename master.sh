@@ -1,6 +1,6 @@
 echo ""
 echo "#####################################################"
-echo " by : Master vi |chyyk@hotmail.com"
+echo " by : Master Vi |chyyk@hotmail.com"
 echo"           Vibuntu Team
 echo"     your questions   Vibuntu support 
 echo "#####################################################"
@@ -39,8 +39,8 @@ echo ""
 apt-get install kali-menu 
 echo ""
 echo ""
-apt-get install nmap zenmap wireshark wifite sqlmap metasploit armitage 
-echo " "
+apt-get install nmap zenmap wireshark wifite sqlmap   
+echo ""
 echo ""
 echo ""
 echo ""
