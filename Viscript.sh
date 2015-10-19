@@ -3,6 +3,8 @@ cat <<EOF
 *****************
  Vi Script
 Update Metasploit
+
+mastervi@mail.bg
 *****************
 by Master Vi
 EOF
