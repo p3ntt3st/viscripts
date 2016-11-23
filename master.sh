@@ -1,8 +1,8 @@
 echo ""
 echo "#####################################################"
-echo " by : Master Vi |chyyk@hotmail.com"
+echo " by : Master Vi |chyyyk@hotmail.com"
 echo"           Vibuntu Team
-echo"     your questions   Vibuntu support 
+echo"     your questions   Vi Team Security Group
 echo "#####################################################"
 echo ""
 echo ""
@@ -47,4 +47,4 @@ echo ""
 echo ""
 echo "
 echo "
-echo "by : Master Vi | chyyk@hotmail.com"
+echo "by : Master Vi | chyyyk@hotmail.com"
